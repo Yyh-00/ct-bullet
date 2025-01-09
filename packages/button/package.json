@@ -1,0 +1,35 @@
+{
+  "name": "@ct-bullet-ui/button",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "yuyih",
+  "scripts": {
+    "build": "rimraf ./dist && vite build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "@ct-bullet-ui/shared": "workspace:^",
+    "element-plus": "^2.9.1"
+  },
+  "main": "./dist/ct-bullet-ui-button.umd.js",
+  "module": "./dist/ct-bullet-ui-button.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/ct-bullet-ui-button.umd.js",
+      "import": "./dist/ct-bullet-ui-button.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
+  }
+}

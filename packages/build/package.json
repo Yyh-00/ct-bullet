@@ -1,0 +1,45 @@
+{
+  "name": "@ct-bullet-ui/build",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "yuyih",
+  "scripts": {
+    "build": "rimraf ./dist && vite build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@rollup/plugin-replace": "^5.0.2",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "type-fest": "^4.1.0",
+    "typescript": "^5.1.6",
+    "vite-plugin-inspect": "^0.7.35"
+  },
+  "peerDependencies": {
+    "vite": ">=3.0.0",
+    "vue": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  },
+  "main": "./dist/ct-bullet-ui-build.umd.js",
+  "module": "./dist/ct-bullet-ui-build.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/ct-bullet-ui-build.umd.js",
+      "import": "./dist/ct-bullet-ui-build.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
+  }
+}

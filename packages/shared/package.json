@@ -1,0 +1,35 @@
+{
+  "name": "@ct-bullet-ui/shared",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "OpenX",
+  "scripts": {
+    "build": "rimraf ./dist && vite build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.13",
+    "lodash": "^4.17.21"
+  },
+  "main": "./dist/ct-bullet-ui-shared.umd.js",
+  "module": "./dist/ct-bullet-ui-shared.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/ct-bullet-ui-shared.umd.js",
+      "import": "./dist/ct-bullet-ui-shared.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
+  }
+}

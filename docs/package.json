@@ -1,0 +1,17 @@
+{
+  "name": "@ct-bullet-ui/docs",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev . --host --port 8080",
+    "build": "vitepress build .",
+    "preview": "vitepress preview . --host"
+  },
+  "devDependencies": {
+    "vitepress": "^1.5.0"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@ct-bullet-ui/ui": "workspace:^",
+    "element-plus": "^2.9.1"
+  }
+}

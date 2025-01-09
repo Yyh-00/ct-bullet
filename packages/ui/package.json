@@ -1,0 +1,38 @@
+{
+  "name": "@ct-bullet-ui/ui",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "OpenX",
+  "scripts": {
+    "build:package": "vite build --mode package",
+    "build:full": "vite build --mode full",
+    "build:full-min": "vite build --mode full-min",
+    "build": "rimraf ./dist && pnpm run build:package && pnpm run build:full && pnpm run build:full-min"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "@ct-bullet-ui/button": "workspace:^",
+    "@ct-bullet-ui/shared": "workspace:^"
+  },
+  "main": "./dist/ct-bullet-ui-ui.umd.js",
+  "module": "./dist/ct-bullet-ui-ui.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/ct-bullet-ui-ui.umd.js",
+      "import": "./dist/ct-bullet-ui-ui.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
+  }
+}
