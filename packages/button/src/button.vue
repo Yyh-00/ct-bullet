@@ -25,7 +25,7 @@ function clickHandler() {
 
 <template>
   <div class="bul-button">
-    <el-button type="primary" @click="clickHandler">el-button1</el-button>
+    <el-button type="primary" @click="clickHandler">el-button1222</el-button>
   </div>
 </template>
 

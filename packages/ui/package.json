@@ -1,13 +1,13 @@
 {
-  "name": "@ct-bullet-ui/ui",
+  "name": "ct-bullet-ui",
   "version": "0.0.1",
-  "description": "",
+  "description": "基于ElementPlus实现加强功能封装的组件库",
   "keywords": [
     "vue",
     "ui",
     "component library"
   ],
-  "author": "OpenX",
+  "author": "yuyih",
   "scripts": {
     "build:package": "vite build --mode package",
     "build:full": "vite build --mode full",
@@ -25,13 +25,13 @@
     "@ct-bullet-ui/button": "workspace:^",
     "@ct-bullet-ui/shared": "workspace:^"
   },
-  "main": "./dist/ct-bullet-ui-ui.umd.js",
-  "module": "./dist/ct-bullet-ui-ui.mjs",
+  "main": "./dist/ct-bullet-ui.umd.js",
+  "module": "./dist/ct-bullet-ui.mjs",
   "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/ct-bullet-ui-ui.umd.js",
-      "import": "./dist/ct-bullet-ui-ui.mjs",
+      "require": "./dist/ct-bullet-ui.umd.js",
+      "import": "./dist/ct-bullet-ui.mjs",
       "types": "./dist/src/index.d.ts"
     }
   }

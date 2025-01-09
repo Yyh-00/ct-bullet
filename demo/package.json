@@ -5,7 +5,7 @@
     "dev": "vite dev --port 8081"
   },
   "dependencies": {
-    "@ct-bullet-ui/ui": "workspace:^",
+    "ct-bullet-ui": "workspace:^",
     "element-plus": "^2.9.1"
   }
 }

@@ -7,9 +7,9 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: /^@ct-bullet-ui\/(.+)$/,
-        replacement: join(__dirname, '..', 'packages', '$1', 'src'),
-      },
-    ],
-  },
+        find: /^ct-bullet-ui\/(.+)$/,
+        replacement: join(__dirname, '..', 'packages', '$1', 'src')
+      }
+    ]
+  }
 });

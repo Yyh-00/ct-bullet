@@ -69,7 +69,7 @@ importers:
 
   demo:
     dependencies:
-      '@ct-bullet-ui/ui':
+      ct-bullet-ui:
         specifier: workspace:^
         version: link:../packages/ui
       element-plus:
@@ -78,12 +78,12 @@ importers:
 
   docs:
     dependencies:
-      '@ct-bullet-ui/ui':
-        specifier: workspace:^
-        version: link:../packages/ui
       '@element-plus/icons-vue':
         specifier: ^2.3.1
         version: 2.3.1(vue@3.5.13(typescript@5.7.2))
+      ct-bullet-ui:
+        specifier: workspace:^
+        version: link:../packages/ui
       element-plus:
         specifier: ^2.9.1
         version: 2.9.2(vue@3.5.13(typescript@5.7.2))
@@ -124,9 +124,6 @@ importers:
       '@ct-bullet-ui/shared':
         specifier: workspace:^
         version: link:../shared
-      element-plus:
-        specifier: ^2.9.1
-        version: 2.9.2(vue@3.5.13(typescript@5.7.2))
       vue:
         specifier: '>=3.0.0'
         version: 3.5.13(typescript@5.7.2)

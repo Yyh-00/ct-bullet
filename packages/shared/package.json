@@ -7,7 +7,7 @@
     "ui",
     "component library"
   ],
-  "author": "OpenX",
+  "author": "yuyih",
   "scripts": {
     "build": "rimraf ./dist && vite build"
   },

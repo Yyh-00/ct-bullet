@@ -4,7 +4,6 @@ import Button from '@ct-bullet-ui/button';
 const components = [Button];
 
 const install = (app: App): void => {
-  // @ts-ignore
   components.map((component: any) => {
     if (!component.name) {
       component.install(app);
