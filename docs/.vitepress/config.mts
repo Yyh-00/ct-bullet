@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
+  base: '/ct-bullet-ui/',
   lang: 'zh-CN',
   title: 'CT-Bullet',
   description: '组件',

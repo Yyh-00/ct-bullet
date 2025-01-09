@@ -7,8 +7,9 @@
     "type:src": "rimraf ./dist && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
     "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && rimraf ./dist",
     "dev:demo": "pnpm --filter @ct-bullet-ui/demo run dev",
-    "dev:docs": "pnpm --filter @ct-bullet-ui/docs run dev",
-    "build:docs": "pnpm --filter @ct-bullet-ui/docs run build"
+    "dev:docs": "pnpm run build:ui && pnpm --filter @ct-bullet-ui/docs run dev",
+    "build:docs": "pnpm --filter @ct-bullet-ui/docs run build",
+    "docs:deploy": "cmd /c scripts\\deploy.bat"
   },
   "dependencies": {
     "vue": "^3.5.13"

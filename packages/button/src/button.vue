@@ -6,7 +6,7 @@ const props = withDefaults(
     text?: string;
   }>(),
   {
-    text: 'World1wwsssss'
+    text: 'hello world'
   }
 );
 
@@ -16,7 +16,9 @@ function clickHandler() {
 </script>
 
 <template>
-  <el-button type="primary" @click="clickHandler">el-button1</el-button>
+  <div class="bul-button">
+    <el-button type="primary" @click="clickHandler">el-button1</el-button>
+  </div>
 </template>
 
 <style lang="scss" scoped>
