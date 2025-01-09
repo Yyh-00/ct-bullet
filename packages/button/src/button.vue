@@ -1,3 +1,11 @@
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'BulButton'
+});
+</script>
+
 <script setup lang="ts">
 import { hello } from '@ct-bullet-ui/shared';
 

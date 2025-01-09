@@ -11,7 +11,7 @@ export default defineConfig({
       output: {
         assetFileNames: (assetInfo) => {
           if (!assetInfo.names?.includes('main.css')) {
-            return 'css/[name].css';
+            return 'css/[name][extname]';
           }
           return '[name][extname]';
         }

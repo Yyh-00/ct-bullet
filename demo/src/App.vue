@@ -1,7 +1,4 @@
-<script setup lang="ts">
-import { Button } from '@ct-bullet-ui/ui';
-</script>
-
 <template>
-  <Button>111</Button>
+  <bul-button>111</bul-button>
 </template>
+<script setup lang="ts"></script>

@@ -1,9 +1,9 @@
 @echo off
 echo start build:ui
-@REM call pnpm run build:ui
+call pnpm run build:ui
 echo end build:ui
 echo start build:docs
-@REM call pnpm run build:docs
+call pnpm run build:docs
 echo end build:docs
 cd /d docs\.vitepress\dist
 echo * text=auto eol=lf > .gitattributes
@@ -15,6 +15,6 @@ echo end docs git
 echo start code git
 cd ../../../
 git add .
-git commit -m 'update'
+git commit -m "test phase update"
 git push
 echo end code git
