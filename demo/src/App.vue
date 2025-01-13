@@ -1,7 +1,21 @@
 <template>
-  <bul-button>111</bul-button>
-  <el-button @click="hello('123456')">132</el-button>
+  <!-- <Button /> -->
+  <bul-button />
+  <!-- <VirtualTransfer v-model="value" :data="data" filterable /> -->
 </template>
 <script setup lang="ts">
-import { hello } from 'ct-bullet-ui';
+// import { ref } from 'vue';
+// import { Button } from 'ct-bullet';
+
+// const value = ref<string>();
+// const data = [
+//   {
+//     label: '选项1',
+//     value: '1'
+//   },
+//   {
+//     label: '选项2',
+//     value: '2'
+//   }
+// ];
 </script>

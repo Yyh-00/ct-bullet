@@ -1,6 +1,6 @@
 {
-  "name": "@ct-bullet-ui/button",
-  "version": "0.0.0",
+  "name": "@ct-bullet/hooks",
+  "version": "0.0.2",
   "description": "",
   "keywords": [
     "vue",
@@ -18,16 +18,14 @@
   "peerDependencies": {
     "vue": ">=3.0.0"
   },
-  "dependencies": {
-    "@ct-bullet-ui/shared": "workspace:^"
-  },
-  "main": "./dist/ct-bullet-ui-button.umd.js",
-  "module": "./dist/ct-bullet-ui-button.mjs",
+  "dependencies": {},
+  "main": "./dist/ct-bullet-hooks.umd.js",
+  "module": "./dist/ct-bullet-hooks.mjs",
   "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/ct-bullet-ui-button.umd.js",
-      "import": "./dist/ct-bullet-ui-button.mjs",
+      "require": "./dist/ct-bullet-hooks.umd.js",
+      "import": "./dist/ct-bullet-hooks.mjs",
       "types": "./dist/src/index.d.ts"
     }
   }

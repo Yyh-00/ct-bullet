@@ -1,11 +1,12 @@
 {
-  "name": "@ct-bullet-ui/demo",
+  "name": "@ct-bullet/demo",
   "private": true,
   "scripts": {
     "dev": "vite dev --port 8081"
   },
   "dependencies": {
-    "ct-bullet-ui": "workspace:^",
-    "element-plus": "^2.9.1"
+    "ct-bullet": "workspace:^",
+    "element-plus": "^2.9.1",
+    "@element-plus/icons-vue": "^2.3.1"
   }
 }

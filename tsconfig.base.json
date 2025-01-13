@@ -38,7 +38,7 @@
     "types": [],
     // 路径别名设置
     "paths": {
-      "@ct-bullet-ui/*": ["packages/*/src"]
+      "@ct-bullet/*": ["packages/*/src"]
     }
   }
 }

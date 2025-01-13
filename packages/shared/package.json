@@ -1,6 +1,6 @@
 {
-  "name": "@ct-bullet-ui/shared",
-  "version": "0.0.0",
+  "name": "@ct-bullet/shared",
+  "version": "0.0.1",
   "description": "",
   "keywords": [
     "vue",
@@ -18,17 +18,14 @@
   "peerDependencies": {
     "vue": ">=3.0.0"
   },
-  "dependencies": {
-    "@types/lodash": "^4.17.13",
-    "lodash": "^4.17.21"
-  },
-  "main": "./dist/ct-bullet-ui-shared.umd.js",
-  "module": "./dist/ct-bullet-ui-shared.mjs",
+  "dependencies": {},
+  "main": "./dist/ct-bullet-shared.umd.js",
+  "module": "./dist/ct-bullet-shared.mjs",
   "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/ct-bullet-ui-shared.umd.js",
-      "import": "./dist/ct-bullet-ui-shared.mjs",
+      "require": "./dist/ct-bullet-shared.umd.js",
+      "import": "./dist/ct-bullet-shared.mjs",
       "types": "./dist/src/index.d.ts"
     }
   }

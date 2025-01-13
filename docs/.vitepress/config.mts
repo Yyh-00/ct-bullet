@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress';
+import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/ct-bullet-ui/',
+  base: '/ct-bullet/',
   lang: 'zh-CN',
   title: 'CT-Bullet',
   description: '组件',
@@ -39,6 +40,20 @@ export default defineConfig({
     },
     search: {
       provider: 'local'
+    }
+  },
+  vite: {
+    resolve: {
+      alias: [
+        {
+          find: /^@ct-bullet\/(.+)$/,
+          replacement: resolve(__dirname, '../../packages', '$1', 'src')
+        },
+        {
+          find: /^ct-bullet$/,
+          replacement: resolve(__dirname, '../../packages/ui', 'src')
+        }
+      ]
     }
   }
 });

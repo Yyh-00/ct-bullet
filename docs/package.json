@@ -1,5 +1,5 @@
 {
-  "name": "@ct-bullet-ui/docs",
+  "name": "@ct-bullet/docs",
   "private": true,
   "scripts": {
     "dev": "vitepress dev . --host --port 8080",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
-    "ct-bullet-ui": "workspace:^",
+    "ct-bullet": "workspace:^",
     "element-plus": "^2.9.1"
   }
 }

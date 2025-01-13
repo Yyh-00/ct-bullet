@@ -1,6 +1,6 @@
 {
-  "name": "ct-bullet-ui",
-  "version": "0.0.1",
+  "name": "ct-bullet",
+  "version": "0.0.2",
   "description": "基于ElementPlus实现加强功能封装的组件库",
   "keywords": [
     "vue",
@@ -16,23 +16,25 @@
   },
   "files": [
     "dist",
+    "dist/index.css",
     "README.md"
   ],
   "peerDependencies": {
     "vue": ">=3.0.0"
   },
   "dependencies": {
-    "@ct-bullet-ui/button": "workspace:^",
-    "@ct-bullet-ui/shared": "workspace:^"
+    "@ct-bullet/shared": "0.0.1",
+    "@ct-bullet/hooks": "0.0.2"
   },
-  "main": "./dist/ct-bullet-ui.umd.js",
-  "module": "./dist/ct-bullet-ui.mjs",
+  "main": "./dist/ct-bullet.umd.js",
+  "module": "./dist/ct-bullet.mjs",
   "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/ct-bullet-ui.umd.js",
-      "import": "./dist/ct-bullet-ui.mjs",
+      "require": "./dist/ct-bullet.umd.js",
+      "import": "./dist/ct-bullet.mjs",
       "types": "./dist/src/index.d.ts"
-    }
+    },
+    "./dist/index.css": "./dist/index.css"
   }
 }

@@ -1,3 +1,9 @@
+<template>
+  <div class="bul-button">
+    <el-button type="primary" @click="clickHandler">bul-button1</el-button>
+  </div>
+</template>
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 
@@ -7,7 +13,7 @@ export default defineComponent({
 </script>
 
 <script setup lang="ts">
-import { hello } from '@ct-bullet-ui/shared';
+import { hello } from '@ct-bullet/shared';
 
 const props = withDefaults(
   defineProps<{
@@ -23,12 +29,6 @@ function clickHandler() {
 }
 </script>
 
-<template>
-  <div class="bul-button">
-    <el-button type="primary" @click="clickHandler">el-button1222</el-button>
-  </div>
-</template>
-
 <style lang="scss" scoped>
-@use '../../theme-chalk/src/button/button';
+@use './button.scss';
 </style>

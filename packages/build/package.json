@@ -1,5 +1,5 @@
 {
-  "name": "@ct-bullet-ui/build",
+  "name": "@ct-bullet/build",
   "version": "0.0.0",
   "description": "",
   "keywords": [
@@ -32,13 +32,13 @@
       "optional": true
     }
   },
-  "main": "./dist/ct-bullet-ui-build.umd.js",
-  "module": "./dist/ct-bullet-ui-build.mjs",
+  "main": "./dist/ct-bullet-build.umd.js",
+  "module": "./dist/ct-bullet-build.mjs",
   "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/ct-bullet-ui-build.umd.js",
-      "import": "./dist/ct-bullet-ui-build.mjs",
+      "require": "./dist/ct-bullet-build.umd.js",
+      "import": "./dist/ct-bullet-build.mjs",
       "types": "./dist/src/index.d.ts"
     }
   }

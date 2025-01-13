@@ -1,5 +1,5 @@
 import Button from './button.vue';
-import { withInstall } from '@ct-bullet-ui/shared';
+import { withInstall } from '@ct-bullet/shared';
 
 export const BulButton = withInstall(Button);
 export default BulButton;

@@ -10,7 +10,8 @@
     // baseUrl 改变了，基础配置中的 paths 也需要一并重写
     "paths": {
       "@/*": ["src/*"],
-      "@ct-bullet-ui/*": ["../packages/*/src"]
+      "ct-bullet": ["../packages/ui/src/index.ts"],
+      "@ct-bullet/*": ["../packages/*/src"]
     }
   },
   "include": [

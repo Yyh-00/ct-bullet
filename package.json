@@ -1,15 +1,17 @@
 {
-  "name": "ct-bullet-ui",
+  "name": "ct-bullet-assemble",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./",
     "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
     "type:src": "rimraf ./dist && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
-    "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && rimraf ./dist",
-    "dev:demo": "pnpm --filter @ct-bullet-ui/demo run dev",
-    "dev:docs": "pnpm run build:ui && pnpm --filter @ct-bullet-ui/docs run dev",
-    "build:docs": "pnpm --filter @ct-bullet-ui/docs run build",
-    "docs:deploy": "cmd /c scripts\\deploy.bat"
+    "dev:demo": "pnpm --filter @ct-bullet/demo run dev",
+    "dev:docs": "pnpm run build:pack && pnpm --filter @ct-bullet/docs run dev",
+    "docs:deploy": "cmd /c scripts\\deploy.bat",
+    "build:pack": "pnpm run type:src && pnpm --filter ./packages/** run build && rimraf ./dist",
+    "build:ui": "pnpm run type:src && pnpm --filter ct-bullet run build && rimraf ./dist",
+    "build:docs": "pnpm --filter @ct-bullet/docs run build",
+    "build:publish": "cmd /c scripts\\publish.bat"
   },
   "dependencies": {
     "vue": "^3.5.13"

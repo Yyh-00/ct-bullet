@@ -1,5 +1,5 @@
 export function hello(to: string = 'World') {
-  const txt = `${to + 99999}!`;
+  const txt = `${to}!`;
   alert(txt);
   return txt;
 }

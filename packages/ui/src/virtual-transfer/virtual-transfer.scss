@@ -1,0 +1,80 @@
+@use '../style/common.scss';
+
+.container {
+  display: flex;
+  .box {
+    width: 290px;
+    background-color: #fff;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+    .title-box {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 11px;
+      color: #000;
+      .check-all {
+        display: flex;
+        align-items: center;
+      }
+      .num-box {
+        color: #b2b2b2;
+      }
+    }
+    .search-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 11px 8px;
+      .search-item {
+        border: 1px solid #dcdfe6;
+        border-radius: 4px;
+      }
+    }
+    .data-box {
+      padding: 0 11px 0 14px;
+      overflow-x: auto;
+      box-sizing: border-box;
+      .data-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+
+      .data-item:hover {
+        color: #409eff;
+      }
+    }
+    .active {
+      color: #409eff;
+    }
+  }
+  .el-input .el-input__wrapper,
+  .el-input .el-input__wrapper:hover,
+  .el-input .el-input__wrapper:focus {
+    box-shadow: none !important;
+  }
+  .el-input .el-input-group__append {
+    box-shadow: none;
+    background-color: #fff;
+    padding: 0 10px;
+  }
+  .el-select--small .el-select__wrapper,
+  .el-select--small .el-select__wrapper:hover {
+    min-height: 30px;
+    box-shadow: none;
+    border: 1px solid #dcdfe6;
+  }
+  .el-tag {
+    display: flex;
+    flex-direction: row-reverse;
+    width: fit-content;
+  }
+  .el-tag--small.is-closable {
+    padding-right: 7px;
+  }
+  .el-icon.el-tag__close {
+    margin-right: 5px;
+  }
+}

@@ -7,8 +7,8 @@
     "types": [],
     // 因为 baseUrl 改变了，基础配置中的 paths 也需要一并重写
     "paths": {
-      // 将 @ct-bullet-ui/xxx 内部依赖定位到源码路径
-      "@ct-bullet-ui/*": ["../packages/*/src"]
+      "@ct-bullet/*": ["../packages/*/src"],
+      "ct-bullet": ["../packages/ui/src"]
     }
   },
   "include": [

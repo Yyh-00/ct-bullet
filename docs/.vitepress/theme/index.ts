@@ -3,7 +3,7 @@ import type { EnhanceAppContext } from 'vitepress';
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
-import BulUi from 'ct-bullet-ui';
+import BulUi from 'ct-bullet';
 import { Demo } from '../components';
 import '../style/index.scss';
 

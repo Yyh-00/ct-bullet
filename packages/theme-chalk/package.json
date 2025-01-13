@@ -1,9 +1,0 @@
-{
-  "name": "@ct-bullet-ui/theme-chalk",
-  "private": true,
-  "scripts": {
-    "build": "vite build"
-  },
-  "dependencies": {},
-  "devDependencies": {}
-}
