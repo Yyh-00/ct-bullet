@@ -1,9 +1,9 @@
 @echo off
 echo start build:pack
-call pnpm run build:pack
+@REM call pnpm run build:pack
 echo end build:pack
 echo start build:docs
-call pnpm run build:docs
+@REM call pnpm run build:docs
 echo end build:docs
 cd /d docs\.vitepress\dist
 echo * text=auto eol=lf > .gitattributes
