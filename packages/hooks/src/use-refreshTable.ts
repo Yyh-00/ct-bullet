@@ -6,6 +6,7 @@ import type { Ref } from 'vue';
 type TypeAnyObject = {
   [propName: string]: any;
 };
+
 type TypeDataMap = {
   data: string;
   code: string;
@@ -32,7 +33,7 @@ type TypeOptions = {
   beforeFormat: TypeFunction | null; //上传前参数格式化
   complete: TypeFunction | null; //请求完成事件
   success: TypeFunction | null; //请求成功事件
-  bindEvent: string; //刷新事件名称
+  bindEvent: string; // 自定义刷新事件
 };
 
 // 返回值

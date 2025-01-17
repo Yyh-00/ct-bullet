@@ -1,8 +1,8 @@
 import { App } from 'vue';
-import Button from './button';
-import VirtualTransfer from './virtual-transfer';
+import BulButton from './button';
+import BulVirtualTransfer from './virtual-transfer';
 
-const components = [Button, VirtualTransfer];
+const components = [BulButton, BulVirtualTransfer];
 
 const install = (app: App): void => {
   components.map((component: any) => {
@@ -14,7 +14,7 @@ const install = (app: App): void => {
   });
 };
 
-export { Button, VirtualTransfer };
+export { BulButton, BulVirtualTransfer };
 export * from '@ct-bullet/shared';
 export * from '@ct-bullet/hooks';
 export default { install };

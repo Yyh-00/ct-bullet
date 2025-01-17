@@ -1,6 +1,6 @@
 {
   "name": "ct-bullet",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "基于ElementPlus实现加强功能封装的组件库",
   "keywords": [
     "vue",

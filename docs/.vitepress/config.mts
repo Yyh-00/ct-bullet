@@ -6,40 +6,48 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'CT-Bullet',
   description: '组件',
-  head: [['link', { rel: 'icon', href: '/icon.png' }]],
+  head: [['link', { rel: 'icon', href: '/ct-bullet/icon.png' }]],
   lastUpdated: true,
   themeConfig: {
     logo: '/icon.png',
     nav: [
-      { text: '组件', link: '/components/button' },
+      { text: '组件', link: '/components/' },
       { text: '日志', link: '/log/' }
     ],
     sidebar: {
-      // 指南部分的章节导航
-      '/guide/': [
-        {
-          text: '指南',
-          items: [
-            { text: '安装', link: '/guide/' },
-            { text: '快速开始', link: '/guide/quick-start' }
-          ]
-        }
-      ],
-      // 组件部分的章节导航
       '/components/': [
+        {
+          text: '基础',
+          items: [{ text: '快速开始', link: '/components/' }]
+        },
         {
           text: '组件',
           items: [{ text: 'Button 按钮', link: '/components/button' }]
+        },
+        {
+          text: 'hooks',
+          items: [
+            { text: 'useRefreshTable', link: '/components/hooks/useRefreshTable' },
+            { text: 'useVirtualList', link: '/components/hooks/useVirtualList' }
+          ]
+        },
+        {
+          text: 'shared',
+          items: []
         }
       ]
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/Yyh-00/ct-bullet.git' }],
     footer: {
       message: 'made with by ❤️ yyh',
-      copyright: 'Copyright © 2024'
+      copyright: 'Copyright © 2025'
     },
     search: {
       provider: 'local'
+    },
+    outline: {
+      level: [2, 4],
+      label: 'Contents'
     }
   },
   vite: {
