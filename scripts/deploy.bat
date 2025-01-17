@@ -10,7 +10,7 @@ echo * text=auto eol=lf > .gitattributes
 echo start docs git
 git add .
 git commit -m "Update for deployment"
-git push -f git@github.com:Yyh-00/ct-bullet.git master:github-pages
+git push -f https://github.com/Yyh-00/ct-bullet.git master:github-pages
 echo end docs git
 echo start code git
 cd ../../../
