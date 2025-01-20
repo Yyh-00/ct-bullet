@@ -33,7 +33,15 @@ export default defineConfig({
         },
         {
           text: 'shared',
-          items: []
+          items: [
+            {
+              text: 'file',
+              items: [
+                { text: 'downloadFileLocal', link: '/components/shared/file/downloadFileLocal' },
+                { text: 'getImgResolution', link: '/components/shared/file/getImgResolution' }
+              ]
+            }
+          ]
         }
       ]
     },

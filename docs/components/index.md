@@ -5,6 +5,17 @@
 由于当前组件都是基于Elenemt Plus封装，所以在使用本项目中必须提前安装好最新版 Elenemt Plus
 :::
 
+## 安装
+
+```js
+// 切换内部源
+npm i ct-bullet;
+
+// 如果只需用到其中的 hooks 或者 shared ，可只安装子包
+npm i @ct-bullet/hooks;
+npm i @ct-bullet/shared;
+```
+
 ## 用法
 
 ### 完整引入

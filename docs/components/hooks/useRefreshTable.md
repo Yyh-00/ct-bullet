@@ -226,7 +226,7 @@ export default function useRefreshTable(params: any): TypeReturnValues {
 
 :::
 
-## 用法
+## 示例
 
 ### 有搜索项
 
@@ -308,7 +308,7 @@ type TypeFunction = (...args: any[]) => any;
 | code          |        接口返回状态成功值        |       否       |      number       |                         0                          |
 | initData      |        初始化获取列表数据        |       否       |      boolean      |                        true                        |
 | searchData    |      无搜索是提供的搜索参数      |  无搜索项必填  |   TypeAnyObject   |                        true                        |
-| bindEvent     |          自定义刷新事件          |       否       |      string       |                    `ut-refresh`                    |
+| bindEvent     |          自定义刷新事件          |       否       |      string       |                     ut-refresh                     |
 | beforeFormat  |       请求前参数格式化回调       |       否       |   TypeFunction    |                         —                          |
 | complete      |         请求完成事件回调         |       否       |   TypeFunction    |                         —                          |
 | success       |         请求成功事件回调         |       否       |   TypeFunction    |                         —                          |

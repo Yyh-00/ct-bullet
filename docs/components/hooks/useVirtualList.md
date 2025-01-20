@@ -60,7 +60,7 @@ export default function useVirtualList(params: typeParems): TypeReturnValues {
 
 :::
 
-## 用法
+## 示例
 
 ```html
 <template>

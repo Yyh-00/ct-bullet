@@ -13,19 +13,15 @@ export default defineComponent({
 </script>
 
 <script setup lang="ts">
-import { hello } from '@ct-bullet/shared';
-
-const props = withDefaults(
-  defineProps<{
-    text?: string;
-  }>(),
-  {
-    text: 'hello world'
-  }
-);
+import { downloadFileLocal } from '@ct-bullet/shared';
 
 function clickHandler() {
-  hello(props.text);
+  const data = [
+    ['Name', '中文', 'City'],
+    ['Alice', '25', 'New York']
+  ];
+
+  downloadFileLocal(data);
 }
 </script>
 

@@ -1,2 +1,2 @@
-export * from './hello';
 export * from './withInstall';
+export * from './downloadFileLocal';

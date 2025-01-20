@@ -12,6 +12,8 @@
       </div>
     </div>
   </div>
+
+  <bul-button />
 </template>
 <script setup lang="ts">
 import { useVirtualList } from '@ct-bullet/hooks';
